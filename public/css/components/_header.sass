@@ -1,0 +1,41 @@
+header
+  display: flex
+  flex-direction: row
+  padding: 1em 1em 0 1em
+  background-color: #212121
+  .logo
+    flex: 1
+    display: flex
+    justify-content: center
+    align-self: center
+    img
+      height: 2.5em
+
+  .sidebar
+    flex: 1
+    color: white
+    display: flex
+    align-self: center
+    justify-content: flex-start
+    svg
+      font-size: 2em
+      &:hover
+        cursor: pointer
+        color: $hover-colour
+  .nav
+    flex: 1
+    align-self: center
+    text-align: end
+    a
+      padding-right: 1em
+      color: white
+      text-decoration: none
+      font-size: 1.1em
+      &:hover
+        cursor: pointer
+        color: $hover-colour
+
+@media screen and (min-width: $medium-breakpoint)
+  header
+    padding: 0.5em 1em 0.5em 1em
+    justify-content: center

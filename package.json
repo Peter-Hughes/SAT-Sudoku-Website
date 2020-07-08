@@ -1,0 +1,54 @@
+{
+  "name": "sudoku_solver",
+  "description": "Sudoku website to help users understand the satisfiablity problem",
+  "version": "1.0.0",
+  "config": {
+    "stack_name": "sudoku_solver"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
+    "axios": "^0.19.2",
+    "connected-react-router": "^6.5.2",
+    "expect": "^24.7.1",
+    "history": "^4.9.0",
+    "immer": "^4.0.2",
+    "node-sass": "^4.11.0",
+    "normalize.css": "^8.0.0",
+    "npm": "^6.13.6",
+    "react": "^16.11.0",
+    "react-ace": "^8.0.0",
+    "react-app-polyfill": "^1.0.4",
+    "react-dom": "^16.11.0",
+    "react-dropdown-select": "^3.6.5",
+    "react-file-reader": "^1.1.4",
+    "react-redux": "^7.1.1",
+    "react-redux-toastr": "^7.6.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "react-scripts": "^3.3.0",
+    "redux-devtools": "^3.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "scss": "node-sass --watch scss -o css",
+    "test": "react-scripts test"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "author": "Peter Hughes (40155428)",
+  "license": "MIT"
+}

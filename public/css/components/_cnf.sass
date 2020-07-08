@@ -1,0 +1,51 @@
+.container
+  display: flex
+  flex-direction: column
+  flex: 1
+
+  .cnf
+    display: flex
+    flex-direction: column
+    flex: 4
+
+    .features
+      display: flex
+      align-self: flex-end
+      padding: 1em 1em 0 1em
+      flex-direction: row
+      svg
+        font-size: 2em
+        padding-right: 1em
+        &:hover
+          cursor: pointer
+          color: $hover-colour
+    .editor
+      display: flex
+      flex-direction: column
+      flex: 1
+      align-items: stretch
+
+      .section
+        display: flex
+        align-items: stretch
+        flex-direction: column
+        flex: 1
+        .title
+          margin: 1em 1em 0 1em
+          padding-left: 1em
+          font-size: 1.2em
+          border-bottom: $triadic-primary 2px solid
+
+        .textarea
+          flex: 1
+          font-size: 1.1em
+          margin: 0 1em 1em 1em
+          min-height: 200px
+
+
+@media screen and (min-width: $small-breakpoint)
+  .container
+    flex-direction: row
+    .cnf
+      .editor
+        flex-direction: row

@@ -1,0 +1,71 @@
+.container
+  display: flex
+  flex-direction: column
+  flex: 1
+
+  .puzzle
+    flex: 4
+    .message
+      color: $triadic-primary
+      flex: 1
+      text-align: center
+      padding-top: 1em
+      font-size: 1.4em
+      max-height: 2em
+      min-height: 2em
+    .message-error
+      color: $triadic-secondary
+      flex: 1
+      text-align: center
+      padding-top: 1em
+      font-size: 1.4em
+      max-height: 2em
+      min-height: 2em
+    .board
+      display: flex
+      justify-content: center
+      margin: 0 2.5em 2.5em 2.5em
+      flex-direction: column
+      .row
+        justify-content: center
+        display: flex
+        flex-direction: row
+        flex: 1
+        input
+          max-width: 3em
+          max-height: 3em
+          width: 100%
+          padding: 1% 0 1% 0
+          text-align: center
+          box-shadow: #e1e1e1 1px 1px
+          background: white
+          font-size: 1.5em
+          color: $primary-colour
+          &:read-only
+            background: #919191
+            color: white
+        .shaded
+          background-color: #e1e1e1
+        .solver
+          color: $triadic-secondary
+    .puzzle-buttons
+      display: flex
+      flex-direction: row
+      justify-content: center
+      flex-wrap: wrap-reverse
+
+      .button
+        cursor: pointer
+        margin: 0 1em 1em 1em
+        background-color: $primary-colour
+        border: none
+        color: white
+        font-size: 1.1em
+        padding: .5em 1em
+        border-radius: .25em
+        &:hover
+          background-color: $hover-colour
+
+@media screen and (min-width: $small-breakpoint)
+  .container
+    flex-direction: row
